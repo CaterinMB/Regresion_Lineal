@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prediccion sobre Flores</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Prediccion sobre Flores</h1>
+        <form action="/predict" method="post">
+
+            <label for="LargoSepalo">Largo del sépalo:</label>
+            <input type="number" name="LargoSepalo" id="LargoSepalo" step="0.1" min="0.0" max="9.0" required><br><br>
+
+            <label for="AnchoSepalo">Ancho del sépalo:</label>
+            <input type="number" name="AnchoSepalo" id="AnchoSepalo" step="0.1" min="0.0" max="9.0" required><br><br>
+
+            <label for="LargoPetalo">Largo del pétalo:</label>
+            <input type="number" name="LargoPetalo" id="LargoPetalo" step="0.1" min="0.0" max="9.0" required><br><br>
+
+            <label for="AnchoPetalo">Ancho del sépalo:</label>
+            <input type="number" name="AnchoPetalo" id="AnchoPetalo" step="0.1" min="0.0" max="9.0" required><br><br>
+
+            <button type="submit">Realizar prediccion</button>
+        </form>
+    </div>
+</body>
+
+</html>
